@@ -5,13 +5,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix"
+    "url": "https://github.com/arahovakimyan/cordova-plugin-wkwebview-xhrfix"
   },
-  "name": "cordova-plugin-wkwebviewxhrfix",
+  "name": "cordova-plugin-wkwebview-xhrfix",
   "version": "0.1.0",
   "description": "Cordova plugin to fix local file XHR access inside WKWebView",
   "cordova": {
-    "id": "cordova-plugin-wkwebviewxhrfix",
+    "id": "cordova-plugin-wkwebview-xhrfix",
     "platforms": [
       "ios"
     ]
