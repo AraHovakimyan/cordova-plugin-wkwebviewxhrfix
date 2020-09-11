@@ -3,13 +3,10 @@
 xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>WKWebView XHR Fix</name>
-
 	<license>MIT</license>
-
 	<engines>
 		<engine name="cordova" version=">=3.2.0" />
 	</engines>
-
 	<platform name="ios">
 		<config-file parent="/*" target="config.xml">
 			<feature name="WKWebViewXHRFix">
@@ -17,9 +14,9 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 				<param name="onload" value="true" />
 			</feature>
 		</config-file>
-
 		<header-file src="src/ios/CDVWebViewEngine+FileXhrFix.h" />
 		<source-file src="src/ios/CDVWebViewEngine+FileXhrFix.m" />
-
+        <header-file src="src/ios/CDVWKWebViewEngine+FileXhrFix.h" />
+        <source-file src="src/ios/CDVWKWebViewEngine+FileXhrFix.m" />
 	</platform>
 </plugin>

@@ -1,18 +1,17 @@
 //
-//  CDVWebViewEngine+FileXhrFix.m
+//  CDVWKWebViewEngine+FileXhrFix.m
 //
-//  Created by Ara Hovakimyan on 25/Aug/2020.
+//  Created by Ara Hovakimyan on 10/Sep/2020.
 //
 //
-
 #import <objc/runtime.h>
-#import "CDVWebViewEngine+FileXhrFix.h"
+#import "CDVWKWebViewEngine+FileXhrFix.h"
 
-#ifdef EXIST_CDVWEBVIEWENGINE
-@implementation CDVWebViewEngine (FileXhrFix)
+#ifdef EXIST_CDVWKWEBVIEWENGINE
+@implementation CDVWKWebViewEngine (FileXhrFix)
 + (void)load {
     SEL selector = NSSelectorFromString(@"createConfigurationFromSettings:");
-    Method originalMethod = class_getInstanceMethod([CDVWebViewEngine class], selector);
+    Method originalMethod = class_getInstanceMethod([CDVWKWebViewEngine class], selector);
     IMP originalImp = method_getImplementation(originalMethod);
     typedef WKWebViewConfiguration* (*send_type)(id, SEL , NSDictionary*);
     send_type originalImpSend = (send_type)originalImp;
