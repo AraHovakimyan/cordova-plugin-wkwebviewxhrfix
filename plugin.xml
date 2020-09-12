@@ -1,15 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-wkwebviewxhrfix" version="0.1.0" 
-xmlns="http://apache.org/cordova/ns/plugins/1.0"
-xmlns:android="http://schemas.android.com/apk/res/android">
-	<name>WKWebView XHR Fix</name>
 
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-wkwebviewxhrfix" version="1.0.0">
+	<name>Cordova WKWebView File XHR Fix</name>
+	<description>Cordova iOS plugin to fix local file access via XHR with WKWebView(resolves XHR Cross-Origin Resource Sharing (CORS) constraints) for Cordova iOS 6+</description>
 	<license>MIT</license>
-
+	<keywords>cordova,wkwebview,webview</keywords>
+	 <repo>https://github.com/AraHovakimyan/cordova-plugin-wkwebviewxhrfix</repo>
 	<engines>
-		<engine name="cordova" version=">=3.2.0" />
+		<engine name="cordova" version=">=5.0.0" />
+		<engine name="cordova-ios" version=">=4.0.0" />
+		<engine name="apple-ios" version=">=9.0" />
 	</engines>
-
+	
+	<!-- ios -->
 	<platform name="ios">
 		<config-file parent="/*" target="config.xml">
 			<feature name="WKWebViewXHRFix">
@@ -17,9 +22,10 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 				<param name="onload" value="true" />
 			</feature>
 		</config-file>
+		
+		<framework src="WebKit.framework" weak="true" />
 
 		<header-file src="src/ios/CDVWebViewEngine+FileXhrFix.h" />
 		<source-file src="src/ios/CDVWebViewEngine+FileXhrFix.m" />
-
 	</platform>
 </plugin>

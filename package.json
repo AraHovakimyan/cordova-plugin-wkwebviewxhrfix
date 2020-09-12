@@ -1,31 +1,35 @@
 {
-  "author": "Ara Hovakimyan",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix.git"
-  },
-  "name": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix",
-  "version": "0.1.0",
-  "description": "Cordova plugin to fix local file XHR access inside WKWebView",
-  "cordova": {
-    "id": "cordova-plugin-wkwebviewxhrfix",
-    "platforms": [
-      "ios"
-    ]
-  },
-  "keywords": [
-    "ecosystem:cordova",
-    "cordova-ios"
-  ],
-  "bugs": {
-    "url": "https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix/issues"
-  },
-  "homepage": "https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix#readme",
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.2.0"
-    }
-  ]
+	"name": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix",
+	"version": "1.0.0",
+	"description": "Cordova plugin to fix local file XHR access inside WKWebView for Cordova iOS 6+",
+	"cordova": {
+		"id": "cordova-plugin-wkwebviewxhrfix",
+		"platforms": [
+			"ios"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix.git"
+	},
+	"bugs": {
+		"url": "https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix/issues"
+	},
+	"homepage": "https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix#readme",
+	"keywords": [
+		"cordova",
+		"wkwebview",
+		"ecosystem:cordova",
+		"cordova-ios"
+	],  
+	"author": "Ara Hovakimyan",
+	"license": "MIT",
+	"engines": {
+		"cordovaDependencies": {
+			"1.0.0": { 
+				"cordova": ">5.0.0",
+				"cordova-ios": ">4.0.0"
+			}
+		}
+	}
 }

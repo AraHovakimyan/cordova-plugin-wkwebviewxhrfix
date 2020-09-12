@@ -5,9 +5,10 @@
 //
 //
 
-#import "CDVWebViewEngine+FileXhrFix.h"
 #import <objc/runtime.h>
+#import "CDVWebViewEngine+FileXhrFix.h"
 
+#ifdef EXIST_CDVWEBVIEWENGINE
 @implementation CDVWebViewEngine (FileXhrFix)
 + (void)load {
     SEL selector = NSSelectorFromString(@"createConfigurationFromSettings:");
@@ -37,3 +38,4 @@
     method_setImplementation(originalMethod, newImp);
 }
 @end
+#endif
