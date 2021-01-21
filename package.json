@@ -5,6 +5,9 @@
     "type": "git",
     "url": "git+https://github.com/arahovakimyan/cordova-plugin-wkwebviewxhrfix.git"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@arahovakimyan"
+  },
   "name": "@ahovakimyan/cordova-plugin-wkwebviewxhrfix",
   "version": "0.1.0",
   "description": "Cordova plugin to fix local file XHR access inside WKWebView",
