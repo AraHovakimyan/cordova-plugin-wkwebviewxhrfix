@@ -17,7 +17,4 @@ cordova plugin add https://github.com/AraHovakimyan/cordova-plugin-wkwebviewxhrf
 ## Notes
 This plugin does not depend on any other additional plugins and does not require additional permissions.
 
-## 
-Modified [TheMattRay](https://github.com/TheMattRay) plugin to support Cordova iOS 6+.
-
 That's it! Seriously!

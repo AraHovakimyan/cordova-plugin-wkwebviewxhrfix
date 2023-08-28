@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="@ahovakimyan/cordova-plugin-wkwebviewxhrfix" version="1.0.1">
+	id="@ahovakimyan/cordova-plugin-wkwebviewxhrfix" version="1.0.2">
 	<name>Cordova WKWebView File XHR Fix</name>
 	<description>Cordova iOS plugin to fix local file access via XHR with WKWebView(resolves XHR Cross-Origin Resource Sharing (CORS) constraints) for Cordova iOS 6+</description>
 	<license>MIT</license>
@@ -11,7 +11,6 @@
 	<engines>
 		<engine name="cordova" version=">=5.0.0" />
 		<engine name="cordova-ios" version=">=4.0.0" />
-		<engine name="apple-ios" version=">=9.0" />
 	</engines>
 	
 	<!-- ios -->
